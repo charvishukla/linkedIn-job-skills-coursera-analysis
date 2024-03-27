@@ -1,20 +1,13 @@
-This is your group repo for your final project for COGS108.
+## Skills Sync: Aligning Data Science Demand with Coursera's Tech Education
 
-This repository is private, and is only visible to the course instructors and your group mates; it is not visible to anyone else.
+As a team of STEM students, we were all very curious about what skills and experiences we need to guarantee a job in data science. We were also wondering if crucial workforce skills can be obtained through means other than college: through MOOCs (Massive Open Online Courses) platforms, Coursera in this case. Therefore, we looked into Coursera’s tech-related courses to see if online classes can cover the most prevalent skills required by the data science job postings.
 
-Template notebooks for each component are provided. Only work on the notebook prior to its due date. After each submission is due, move onto the next notebook (For example, after the proposal is due, start working in the Data Checkpoint notebook). 
+In this project, we explore **what is the degree of alignment between the skills demanded by the Data Science job postings on Linkedin (2024) in the United States, and the educational content of technology-related courses offered on Coursera, measured by the significance of correlation between top 5 data science skills listed in job postings and the frequency of these skills being taught in Coursera's technology courses?**
 
-This repository will be frozen on the final project due date. No further changes can be made after that time.
+_Note: technology-related courses are defined as courses from Data Science, Computer Science, Mathematics and IT categories._
 
-Your project proposal and final project will be graded based solely on the corresponding project notebooks in this repository.
+After posing our research question, we found applicable datasets on Kaggle: one detailing data science job listings from LinkedIn and another one that had a large collection of Coursera courses, both from 2024. We then went through cleaning the two datasets to contain standardized relevant variables and went through a series of exploratory data analyses (EDA) to closely investigate our data. We cross referenced the two datasets by using the derived top five skills from job listings to visualize patterns in courses that cover a specific skill among all technical classes on the platform. Some interesting correlations were extracted from EDA: for example, python has consistently come up at the top of relevancy, engagement and prevalence through our analysis. Additionally, we analyzed how the top five in-demand skills were distributed by category of class on Coursera (tagged as “data science”, “computer science”, “math” or “IT”) and how the top five skills were related in engagement based on reviews and ratings for the courses.
 
-Template Jupyter notebooks have been included, with your group number replacing the XXX in the following file names. For each due date, make sure you have a notebook present in this repository by each due date with the following name (where XXX is replaced by your group number):
+After doing a significance testing, by conducting a one-tailed z-test, we failed to reject the null hypothesis that less than or equal to 50% of the tech-related courses that Coursera offer to teach the top at least 1 of the top 5 skills demanded by the jobs dataset. We also explored further to find that there is a statistically significant association between the category of a course (tagged by “data science”, “computer science”, “IT”, or “math”) and the inclusion of the top skills which implies that the distribution of skills across the different course categories is not random, and certain skills are more likely to be taught in certain categories.
 
-- `ProjectProposal_groupXXX.ipynb`
-- `DataCheckpoint_groupXXX.ipynb`
-- `EDACheckpoint_groupXXX.ipynb`
-- `FinalProject_groupXXX.ipynb`
 
-This is *your* repo. You are free to manage the repo as you see fit, edit this README, add data files, add scripts, etc. So long as there are the four files above on due dates with the required information, the rest is up to you all. 
-
-Also, you are free and encouraged to share this project after the course and to add it to your portfolio. Just be sure to fork it to your GitHub at the end of the quarter!
